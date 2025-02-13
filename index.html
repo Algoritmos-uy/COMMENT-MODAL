@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sección de Comentarios</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="comment-section">
+        <h2>califica y comenta</h2>
+        <div class="star-rating" onclick="openModal()">
+            ☆☆☆☆☆
+        </div>
+    </div>
+
+    <!-- Div para mostrar los últimos 4 comentarios -->
+    <div class="latest-comments">
+        <h3>Últimos Comentarios</h3>
+        <div class="comments-row" id="commentsRow">
+            <!-- Aquí se mostrarán los últimos 4 comentarios -->
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div id="commentModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2>Califica y comenta</h2>
+            <div class="modal-stars">
+                <span onclick="rate(1)">★</span>
+                <span onclick="rate(2)">★</span>
+                <span onclick="rate(3)">★</span>
+                <span onclick="rate(4)">★</span>
+                <span onclick="rate(5)">★</span>
+            </div>
+            <input type="text" id="userName" placeholder="Tu nombre" required>
+            <textarea id="commentText" placeholder="Escribe tu comentario aquí..." required></textarea>
+            <button onclick="submitComment()">Enviar</button>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>

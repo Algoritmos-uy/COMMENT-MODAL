@@ -1,0 +1,195 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@200;400&display=swap");
+
+* {
+    --primary-color: #f0f0f0;
+
+    --primary-bg-color: #111217;
+    --secondary-bg-color: #28292e;
+    --primary-border-color: #28292e;
+    --secondary-border-color: #56575a;
+
+    --title-color: #f0f0f0;
+    --text-color: #9a9a9c;
+    --link-color: #9a9a9c;
+    --icon-color: #c7c8c9;
+}
+
+body {
+    font-family: "Inter", Tahoma, Geneva, Verdana, sans-serif;
+    background: var(--secondary-bg-color);
+}
+
+.comment-section {
+    text-align: center;
+    margin-top: 150px;
+}
+
+h2 {
+    font-size: 3rem;
+    font-weight: 500;
+    letter-spacing: 0.4rem;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--title-color);
+}
+
+h3 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    letter-spacing: 0.4rem;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--title-color);
+}
+
+.star-rating {
+    font-size: 2rem;
+    color: var(--primary-color);
+    cursor: pointer;
+}
+
+.star-rating:hover {
+    color: #ffcc00;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background: var(--primary-bg-color);
+    background-color: rgba(0, 0, 0, 0.4);
+    padding-top: 50px;
+}
+
+.modal-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    border-radius: 0.5rem;
+    background: var(--primary-bg-color);
+    margin: 5% auto;
+    padding: 10px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 500px;
+    text-align: center;
+}
+
+.modal-content h2 {
+    margin-bottom: 0.5rem;
+}
+
+.close {
+    color: #aaa;
+    position: fixed;
+    font-size: 2rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover {
+    color: rgb(255, 255, 255);
+}
+
+.modal-stars span {
+    font-size: 2rem;
+    color: var(--primary-color);
+    cursor: pointer;
+}
+
+.modal-stars span:hover,
+.modal-stars span.active {
+    color: #ffcc00;
+}
+
+input {
+    background: var(--secondary-bg-color);
+    border: 1px solid var(--title-color);
+    border-radius: 0.2rem;
+    height: 2rem;
+    color: var(--title-color);
+}
+
+textarea {
+    width: 90%;
+    height: 100px;
+    margin-top: 20px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid var(--title-color);
+    border-radius: 0.5rem;
+    background: var(--secondary-bg-color);
+    color: var(--title-color);
+}
+
+button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: 1px solid var(--title-color);
+    border-radius: 0.5rem;
+    background: var(--secondary-bg-color);
+    color: var(--title-color);
+}
+
+.latest-comments {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.comments-row {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.comment-card {
+    border: 1px solid #ccc;
+    padding: 15px;
+    width: 200px;
+    background: var(--primary-bg-color);
+    text-align: left;
+    border-radius: 0.5rem;
+    color: var(--title-color);
+    box-shadow: #9a9a9c 0px 0px 10px;
+}
+
+.comment-card p {
+    margin: 5px 0;
+}
+
+.comment-card .rating {
+    color: #ffcc00;
+    font-size: 18px;
+}
+
+.comment-card.highlight {
+    border: 2px solid #ffcc00;
+    background-color: #4f4b3b;
+    box-shadow: #f8b201 0px 0px 10px;;
+}
+
+.like-section {
+    margin-top: 10px;
+}
+
+.like-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
