@@ -3,13 +3,21 @@
 COMMENT-MODAL es un repositorio que contiene un componente modal diseñado para permitir a los usuarios agregar comentarios en una interfaz web. Este modal es altamente personalizable y puede ser integrado en cualquier proyecto que requiera funcionalidades de comentarios.
 Características principales
 
-    Interfaz de usuario limpia y moderna: El modal está diseñado con un enfoque en la usabilidad y la experiencia del usuario.
+## Interfaz de usuario limpia y moderna:
 
-    Fácil integración: El componente puede ser fácilmente integrado en proyectos existentes con mínima configuración.
+    El modal está diseñado con un enfoque en la usabilidad y la experiencia del usuario.
 
-    Personalizable: Los estilos y comportamientos del modal pueden ser ajustados según las necesidades del proyecto.
+## Fácil integración:
 
-    Validación de entrada: Incluye validación básica para asegurar que los comentarios no estén vacíos antes de ser enviados.
+    El componente puede ser fácilmente integrado en proyectos existentes con mínima configuración.
+
+## Personalizable:
+
+   Los estilos y comportamientos del modal pueden ser ajustados según las necesidades del proyecto.
+
+## Validación de entrada:
+
+    Incluye validación básica para asegurar que los comentarios no estén vacíos antes de ser enviados.
 
 ## Instalación
 
