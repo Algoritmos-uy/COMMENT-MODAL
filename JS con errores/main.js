@@ -1,3 +1,6 @@
+
+//VERSION DE CODIGO CON ERRORES PARA TRABAJAR EN LA CORRECCION.
+
 let currentRating = 0;
 let comments = [];
 let commentId = 0;
@@ -47,12 +50,11 @@ function submitComment() {
 }
 
 function likeComment(id) {
-    // Busca el comentario en el arreglo ORIGINAL (comments)
     const comment = comments.find(c => c.id === id);
     if (comment) {
         comment.likes++;
         localStorage.setItem('comments', JSON.stringify(comments));
-        updateCommentsView(); // Esto reordenará los comentarios
+        updateCommentsView();
     }
 }
 
@@ -60,8 +62,7 @@ function updateCommentsView() {
     const commentsRow = document.getElementById('commentsRow');
     commentsRow.innerHTML = '';
 
-    // Ordena una COPIA del arreglo para no afectar el original
-    const sortedComments = [...comments].sort((a, b) => b.likes - a.likes);
+    const sortedComments = comments.sort((a, b) => b.likes - a.likes);
 
     sortedComments.forEach(comment => {
         const commentCard = document.createElement('div');
